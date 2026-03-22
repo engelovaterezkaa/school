@@ -1,0 +1,156 @@
+.wrap{
+    background-color: rgb(231, 231, 231);
+    height: 1000vh;
+    width: 1000vh;;
+}
+
+.lista{
+    font-size: larger;
+}
+    .search{
+        font-family: Manrope;
+        padding-top: 20px;
+        margin: none;
+        padding-left: 40px;
+    }
+
+    .textarea1{
+        border-radius: 20px;
+        background-color: rgb(47, 96, 124);
+        width: 1200px;
+        height: 40px;
+        margin-left: 40px;
+        font-size: large;
+        color: white;
+        font-family: Manrope;
+        border: 2px solid white;
+    }
+
+.top{
+    display: flex; 
+    flex-direction: row; 
+
+}
+
+.karta1{
+    height: 290px;
+    width: 180px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color:  rgb(129, 184, 201);
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: none;
+    padding-bottom: none;
+ }
+
+    .obr-ig{
+        height: 60px;
+        width: 60px;
+        padding-left: 58px;
+        padding-top: 20px;
+    }
+
+    .instagram{
+        font-family: Manrope;
+        font-size: large;
+        text-align: center;
+        margin-top: 25px;
+        color: white;
+    }
+
+    .text1{
+        font-family: Manrope;
+        font-size: small;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .button1{
+        margin-left: 40px;
+        background-color:  rgb(231, 231, 231);
+        border: none;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+
+    }
+
+    .button1:hover{
+        cursor: pointer;
+        background-color: rgb(165, 165, 165);
+        color: white;
+    }
+
+.karta2{
+    background-color:white;
+    border: 2px solid rgb(129, 184, 201);
+    height: 240px;
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+    font-family: Manrope;
+    padding: 10px 40px 40px 40px;
+}
+
+.img1{
+    height: 600;
+    width: auto;
+    padding-left: 50px;
+}
+
+.middle{
+    display: flex; 
+    flex-direction: row; 
+}
+
+.karta3{
+    height: 290px;
+    width: 180px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color:  rgb(129, 184, 201);
+    margin-left: 40px;
+    margin-top: none;
+ }
+
+    .obr-yt{
+        height: 70px;
+        width: 130px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .youtube{
+        font-family: Manrope;
+        font-size: large;
+        text-align: center;
+        margin-top: 25px;
+        color: white;
+    }
+
+    .text2{
+        font-family: Manrope;
+        font-size: small;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .button2{
+        margin-left: 40px;
+        background-color:  rgb(231, 231, 231);
+        border: none;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+
+    }
+
+    .button2:hover{
+        cursor: pointer;
+        background-color: rgb(165, 165, 165);
+        color: white;
+    }

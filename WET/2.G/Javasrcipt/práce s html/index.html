@@ -1,0 +1,38 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nadpis">Hola</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore distinctio sint, possimus, laborum necessitatibus doloribus modi sit eligendi expedita deleniti voluptate exercitationem reprehenderit quasi praesentium! Asperiores, autem error dicta rem eveniet eaque quis magnam voluptas inventore illum dolore ipsum vero, consectetur veritatis ullam nihil nisi, nam optio dolorum sapiente?</p>
+
+    <script>
+        let nadpisJS = document.querySelector("#nadpis")
+        let textJS = document.querySelector(".text")
+
+        //let nadpis = document.getElementById("nadpis")  =>lze pouzivat jen id
+
+        nadpisJS.style.color = "magenta"
+        nadpisJS.innerText = "Nový text"
+
+        textJS.style.color = "black"
+
+
+        let uzivatel = window.prompt("Choose a colorr: blue or green")
+        //uzivatel=odpoved, psani do okna
+
+        if (uzivatel === "green") {
+            console.log(nadpisJS.style.color = "green")
+        } else if(uzivatel === "blue") {
+            console.log(nadpisJS.style.color = "blue")
+        } else {
+            nadpisJS.style.color = "red"
+            textJS.innerText = "blbee"
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+.kruh1{
+    height: 140px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh2{
+    height: 210px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh3{
+    height: 280px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh4{
+    height: 350px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh5{
+    height: 420px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh6{
+    height: 490px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh7{
+    height: 560px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+.kruh8{
+    height: 630px;
+    aspect-ratio: 2/1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+}
+
+
+.Wrap{
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+}
+
+.body{
+    background-color: black;
+}
+
+.slunco{
+height: 80px;
+width: 80px;
+}
+
+.merkur{
+    position: absolute;
+    height: 50px;
+width: 50px;
+right: 80px;
+}
+
+.venuse{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 262px;
+}
+
+.zeme{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 100px;
+    top:500px;
+}
+
+.mars{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 545px;
+    right: 150px;
+}
+
+.jupiter{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 160px;
+    left: 170px;
+}
+
+.saturn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 107px;
+    right: 55px;
+}
+
+.uran{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 99px;
+    right: 90px;
+
+}
+
+.neptun{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    left: 50px;
+}
+
+.mesic{
+    position: absolute;
+    height: 20px;
+    width: 20px;  
+    bottom: 200px;
+    left: 70px;
+}

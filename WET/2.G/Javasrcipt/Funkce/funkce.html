@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Funkce</title>
+    </head>
+    <body>
+        <h1 id="nadpis">Bumbác, skvělý nadpis</h1>
+        <p id="odstavec">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+            enim!
+        </p>
+        <h2 id="Nadpis2">Nadpis 2</h2>
+        <button id="tlacitko">Klikni, šup už mě nebaví čekat</button>
+
+        <script>
+            let nadpis = document.querySelector("#nadpis");
+            let odstavec = document.querySelector("#odstavec");
+            let nadpis2 = document.querySelector("#Nadpis2");
+            let tlacitko = document.querySelector("#tlacitko");
+
+            function upravNadpis() {
+                nadpis.style.color = "pink";
+                nadpis.style.backgroundColor = "black";
+                nadpis.style.fontSize = "35px";
+            }
+
+            function upravText(prvek) {
+                prvek.style.color = "pink";
+                prvek.style.backgroundColor = "black";
+                prvek.style.fontSize = "30px";
+            }
+
+            // upravText(nadpis)
+            // upravText(odstavec)
+            // upravText(Nadpis2)
+
+            tlacitko.addEventListener("click", upravNadpis);
+        </script>
+    </body>
+</html>

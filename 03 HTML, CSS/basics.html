@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- znakova sada -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- pro různé zařízení, aby se renderoval obraz -->
+    <title>Document</title>
+    <!-- všechny hrml prvky: https://iamwillwang.com/every-html-element/ -->
+
+    <style>
+        /* píšeme do hlavičky interně, externě nebo inline viz. h1*/
+        body{
+            background-color: thistle;
+        }
+
+        .formWrapper{
+            display: flex;
+            /* umožňuje nám manipulovat s content */
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+
+        #maca{
+            height: 50px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            background-color: teal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(82, 47, 99);">NEJVĚTŠÍ NADPIS</h1> 
+    <h6>nejmenší nadpis</h6>
+
+    <div>div</div>
+    <span>span</span>
+    <!-- span je in line ale div je pod sebou -->
+
+    <a href="www.google.com">Odkaz na Google</a>
+
+    <a href="https://cs.wikipedia.org/wiki/Petr_Macinka">
+        <img src="https://d8-a.sdn.cz/d_8/c_imgrestricted_p7_A/kBfrbpoeNDpoIQBJcFlUGyp/4a2f/macinka-ukrajina-bere-penize-penize-ubohost-filip-macinka.jpeg?fl=cro,0,213,4096,2304|res,1200,,1|jpg,80,,1" alt="" id="maca">
+    </a>
+    
+    <br>
+    <button>bumbac</button><br><br>
+
+    <div class="formWrapper">
+        <form action="">
+            <label for="">Jméno</label>
+            <input type="text" id="name"><br>
+
+            <label for="">Třída</label>
+            <input type="text" id="class"><br>
+
+            <label for="">Maturita?</label><br>
+            <input type="radio" name="Matura" id="ano"> <label for="">Ano</label> 
+            <input type="radio" name="Matura" id="ne"> <label for="">Ne</label> <br> <br>
+            <!-- stejný name == jedna možnost, input type radio == možnost -->
+
+            <label for="">Maturita?</label> <br>
+            <input type="checkbox" name="Matura2" id=""> <label for="">Help me</label><br>
+            <input type="checkbox" name="Matura2" id=""> <label for="">Help me</label><br> <br>
+
+            <input type="color">
+            <input type="submit"> 
+            <!-- může být button ale není tak flexibilní -->
+            <br> <br>
+
+            <!-- seznamy, dva způsoby, 1. čísla ol a 2.odrážky ul -->
+            <h2>Důvody proč dostat maturitu:</h2>
+            <ol>
+                <li>jsem pilný student</li>
+                <li>umím programovat</li>
+                <li>mám ráda Třebešín 100%</li>
+                <li>bumbác</li>
+            </ol>
+
+            <ul>
+                <li>unga bunga I want a burga</li>
+            </ul>
+        </div>
+        <!-- dneska už jsou divy pojmenované podle jejich použití, speciální divy -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input class="input" type="text" />
+        <button class="tlacitko">Zadej input</button>
+        <p class="output"></p>
+
+        <script>
+            const input = document.querySelector(".input");
+            const tlacitko = document.querySelector(".tlacitko"); //const je jako let ale promenna, constanta se nemeni, nelze prepsat
+            const output = document.querySelector(".output");
+
+            tlacitko.addEventListener("click", function () {
+                zpracujInput();
+            });
+
+            function zpracujInput() {
+                let cislo = parseInt(input.value); //parseInt = z textu udela cislo
+
+                // if (cislo > 89 && cislo < 101) zároveň
+                if (cislo > 100) {
+                    output.innerText = "blbost tak chytrej nejsi";
+                } else if (cislo >= 90) {
+                    output.innerText = "nejsi spatnej";
+                } else if (cislo >= 80) {
+                    output.innerText = "dvojka";
+                } else if (cislo >= 60) {
+                    output.innerText = "trojka";
+                } else if (cislo >= 50) {
+                    output.innerText = "čtyřka";
+                } else if (cislo < 50) {
+                    output.innerText = "smrdis na pátou";
+                }
+            }
+        </script>
+    </body>
+</html>

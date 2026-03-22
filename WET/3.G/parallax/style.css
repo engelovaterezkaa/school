@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+.parallax {
+    position: relative;
+    min-height: 100vh;
+    z-index: -5;
+}
+
+
+.parallax > img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden; /*kdyz presahne div, overflow schova*/
+}
+
+
+.clouds_1 {
+    z-index: 2;
+    --rychlost: 10; /*5000px*/
+}
+
+.clouds_2 {
+    z-index: 5;
+    --rychlost: -10; /*-5000px*/
+}
+
+.rocks {
+    z-index: 3;
+    --rychlost: 30;
+}
+
+.ground {
+    z-index: 4;
+    --rychlost: 1;
+}
+
+.sky {
+    z-index: 1;
+    --rychlost: 1;
+}
+
+.clouds_1, .clouds_2 {
+    animation: mraky linear;
+    animation-timeline: scroll(root);
+}
+
+.rocks, .ground, .sky, .heading {
+    animation: ostatni linear;
+    animation-timeline: scroll(root);
+}
+
+
+section {
+    padding-block: 250px;
+    background-image: linear-gradient(#064f7d, #0177b2, #9186a1);
+
+}
+
+section p {
+    width: 75ch;
+    text-align: justify;
+    margin-inline: auto;
+    color: white;
+    font-size: 1.75em;
+
+}
+
+.nadpis{
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    color: white;
+    font-size: 5em;
+    /* text-decoration: underline; */
+    z-index: 6;
+    translate: -50% 0; /*zarovná doprostřed*/
+    --rychlost: 32;
+}
+
+.firefly{
+    height: 10px;
+    aspect-ratio: 1/1;
+    z-index: 99;
+    position: absolute;
+    background-color: rgb(255, 255, 146);
+    border-radius: 50%;
+    filter: blur(2px);
+    transition: 0.5s ease-out;
+}
+
+@keyframes mraky {
+    100% {
+        /* transform: translateX(var(--rychlost)); */
+        transform: translateX(calc(var(--rychlost) * 100px));
+    }
+}
+
+@keyframes ostatni {
+    100% {
+        /* transform: translateY(var(--rychlost)); */
+        transform: translateY(calc(var(--rychlost) * 30px));
+    }
+}

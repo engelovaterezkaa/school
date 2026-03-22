@@ -1,0 +1,45 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        .ctverecek{
+            border: 2px solid black;
+            height: 200px;
+            aspect-ratio: 1/1;
+            background-color: pink;
+            transform: rotate(60deg) skew(20deg)/*musi byt soucasti transfor, jinak vse samostatne*/;
+            translate: 100px 100px;             /*u transform nepíšeme čárku*/
+            scale: 1.5 1.5;
+        }
+
+        /*skew(20deg) = stahne, rotate=>natoci*/
+        /* .ctverecek:hover{
+            background-color: black;
+            height: 500px;
+        } */
+
+        .batman{
+            color: pink;
+        }
+
+        .kitty{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ctverecek"> 
+        <p class="kitty">Hellokitty</p>
+        <p class="batman">batman</p>
+    </div>
+</body>
+
+</html>

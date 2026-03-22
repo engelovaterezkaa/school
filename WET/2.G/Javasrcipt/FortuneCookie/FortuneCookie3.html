@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kontejner">
+        <h1 class="nadpis">Fortune Cookie Generator</h1>
+        <div>
+            <p class="predpoved">Click on the cookie for your fortune!!!</p>
+            <img class="kolacek" src="FortuneCookie_uncracked.png" alt="">
+        </div>
+    </div>
+
+    <p>(Ms paint zase potahal :D)</p>
+
+    <style>
+        .kolacek{
+            height: 250px
+        }
+
+        .StisknutyKolacek{
+            content: url(FortuneCookie_cracked.png); /*meni na druhy obrazek*/
+        }
+    </style>
+
+    <script>
+        let predpovedi = [
+            "Your granny will give you more allowance", 
+            "You will find 5 pennies on the sidewalk", 
+            "Your child will be named Hvězdoň", 
+            "Your mother-in-law won't be haunting you this week", 
+            "Both sides of your pillow will be cold tonight"
+        ]
+
+        let predpoved = document.querySelector(".predpoved")
+        let kolacek = document.querySelector(".kolacek")
+            
+        
+        kolacek.addEventListener("click", predpovedText)
+
+
+        function predpovedText() {
+            let nahodnaPredpoved = Math.floor(Math.random() * predpovedi.length)
+            predpoved.textContent = predpovedi[nahodnaPredpoved]
+            kolacek.classList.add("StisknutyKolacek")
+        }
+        
+    </script>
+</body>
+</html>

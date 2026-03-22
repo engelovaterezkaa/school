@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synaptech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Quicksand";
+            color: aliceblue;
+        }
+
+        .icon{
+            width: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .nav{
+            position: absolute;
+            top: 0%;
+            left: 10%;
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            gap: 10vh;
+            font-weight: 600;
+            font-size: 2vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .navigation{
+            width: 100%;   
+            height: 100vh; 
+            background-size: cover;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+        }
+  
+        .drone{
+            position: absolute;
+            width: 100%; 
+            height: auto; 
+            object-fit: cover;  
+            z-index: -1; 
+        }
+
+        .MainTitles{
+            position: relative;
+
+            animation: titles_slide 1s forwards;
+        }
+
+        .mainTitle{
+            font-size: 10vh;
+        }
+
+        .underTitle{
+            position: relative;
+            font-size: 4vh;
+            top: -10%;
+            left: 15%;
+        }
+
+        @keyframes titles_slide {
+            0%{
+                translate: -1000px 0px;
+            }
+            100%{
+                translate: 200px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <img class="icon" src="utility/photos/light_bulb.png" alt="">
+        <div class="nav">
+            <a href="About.html" id="link">About us</a>
+            <a href="Products.html" id="link">Products</a>
+            <a href="Consultations.html" id="link">Consultations</a>
+            <a href="Contact.html" id="link">Contact</a>
+        </div>
+        <img class="drone" src="utility/photos/drone.jpg" alt="">
+        <div class="MainTitles">
+            <h1 class="mainTitle">Synaptech</h1> 
+            <h2 class="underTitle">where ideas become reality</h2>
+        </div>
+    </div>
+
+</body>
+</html>

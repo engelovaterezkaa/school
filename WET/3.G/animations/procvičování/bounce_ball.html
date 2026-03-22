@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball</title>
+    <style>
+
+        .ball{
+            aspect-ratio: 1/1;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px rgb(115, 192, 215) solid;
+            background-color: aliceblue;
+            position: absolute;
+            animation: hop 1.2s infinite alternate/*=tam a zpátky, vrací animaci*/ ease-in;
+        }
+
+        .button{
+            height: 20px;
+        }
+
+        @keyframes hop {
+            100%{
+                translate: 0 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+
+     </div>
+
+    <button class="button">Hopity hop..?</button>
+
+    <script>
+        let button= document.querySelector(".button")
+        let wrapper = document.querySelector(".wrapper")
+
+        button.addEventListener("click", function () {
+            for (let i = 0; i < 6; i++){
+    
+            let ball = document.createElement("div") /*document v html, vytvoření prvku, jaký typ prvku*/
+            ball.classList.add("ball") /*přiřazení classy*/
+            wrapper.append(ball) /*přidáváme micek do wrappru, někam patří*/
+
+            let randomNumber = Math.floor(Math.random() * 2000) /*deklarace random*/
+            ball.style.left = `${randomNumber}px`  /*$= fstring; nahodná pozice míčku*/
+
+            let randomColor = Math.floor(Math.random()*16777215).toString(16)
+            ball.style.backgroundColor = "#" + randomColor
+            }
+        })
+        
+
+    </script>
+</body>
+</html>

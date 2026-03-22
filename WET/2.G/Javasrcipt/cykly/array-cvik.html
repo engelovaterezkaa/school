@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let seznam = ["pes", "kočka", "kůň", "osel"] //=array
+
+            function nahodnyVyber() {
+                let nahodnaHodnota = Math.floor(Math.random() * seznam.length)
+                console.log(seznam[nahodnaHodnota])
+            }
+
+            nahodnyVyber()
+
+
+            function hledejZaporne(cisla) {
+                for (let i = 0; i < cisla.length; i++) {
+                    if (cisla[i] < 0) {
+                        console.log("zaporne cislo")
+                        //break ukonci cyklus takze vypise z.c. jen jednou
+                    }
+                }
+
+            }
+
+            //hledejZaporne([-1, -5, -3, 2])
+            //hledejZaporne([1, 5, 3, 2])
+
+            function hledejZaporne2(cisla) {
+                let zapornaCisla = [] //*sem
+                for (let i = 0; i < cisla.length; i++) {
+                    if (cisla[i] < 0) {
+                       zapornaCisla.push(cisla[i]) //da hodnotu do noveho seznamu*
+                    }
+                }
+                console.log(zapornaCisla)
+            }
+
+            //hledejZaporne2([-1, -5, -3, 2])
+            //hledejZaporne2([1, 5, 3, -2])
+
+            function hledejSudaCisla(num) {
+                let sudaCisla = []
+                for (let l = 0; sudaCisla % 2 === 0; l++) {
+                    sudaCisla.push(num[l])
+                }
+            }
+
+
+            function prumer(cisla) {
+                let sum = 0
+                for (let m = 0; m < cisla.length; m++) {
+                    sum += cisla[m]
+                }
+
+                let prumerr = sum/cisla.length
+                    console.log(prumerr)
+            }
+
+            prumer([50, 60, 41, 30])
+        </script>
+    </body>
+</html>

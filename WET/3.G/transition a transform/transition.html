@@ -1,0 +1,37 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .ctverecek{
+            border: 2px solid black;
+            height: 200px;
+            aspect-ratio: 1/1;
+            background-color: pink;
+            transition: background-color 2s, height 1s ease-in 2s; 
+        }
+        /*ease-in = tam je pomalejsi, ease-out = sem je rychlejsi; 2s = jak dlouho trvá ease; poslední s = spoždění*/
+        /*na internetu - prozkoumat web.stránku - nastavení animace u transition prvku=>zkopirujeme námi vybrané hodnoty*/
+        .ctverecek:hover{
+            background-color: black;
+            height: 500px;
+        }
+
+        .batman{
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ctverecek">Hellokitty 
+        <p class="batman">batman</p>
+    </div>
+</body>
+
+</html>

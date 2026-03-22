@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .button{
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: black;
+        color: goldenrod;
+        border: 2px solid goldenrod;
+        font-weight: lighter;
+    }
+
+    .button:hover{
+        background-color: goldenrod;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    .button2{
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: black;
+        color: goldenrod;
+        border: 2px solid goldenrod;
+        font-weight: lighter;
+    }
+
+    .button2:hover{
+        background-color: goldenrod;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    </style>
+</head>
+<body>
+    <button class="button">Click!</button>  
+    <h1 class="nadpis">Make it make sense</h1>
+    <p style="color: white;">baf</p>
+
+    <button class="button2">Change the background</button>
+
+    <script>
+        console.log("Hay")
+
+        for(let i=1; i<6; i++){
+            console.log(i + ". hi")
+        }
+
+        for(let k=1; k<6; k++){
+            console.log(k)
+        }
+
+        //const (nelze změnit), let (var: staré)
+        // function funkce(){
+        //     if (i === 5){
+        //         console.log("bomb")
+        //     }
+        // }
+        // 5 === "5" zvládne integer
+        // 5 == "5"
+
+        const button = document.querySelector(".button")
+        const nadpis = document.querySelector(".nadpis")
+        const button2 = document.querySelector(".button2")
+        const body = document.querySelector("body")
+
+        button.addEventListener("click", function () {
+            nadpis.style.color = "pink"
+            nadpis.style.fontSize = "50px"
+            alert("hay")
+        }) 
+        //onclick je jen na jeden věc. addeventlistener je modernější
+
+        button2.addEventListener("click", function (){
+            body.classList.toggle("bg-black")
+        })
+    </script>
+</body>
+</html>

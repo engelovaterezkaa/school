@@ -1,0 +1,65 @@
+/*FLEXBOX: zarovnání prvků, default => row
+Default HTML= jdou pod sebe> Display: Block nebo Inline*/
+
+.wrapper{
+    display: flex; /*inline(vedle sebe) a block(pod sebe)*/
+    justify-content: center; /*zarovnava prvky v divu v hlavní row osa x, column y*/
+    align-items: center; 
+    flex-direction: column; /*když chci do prostřed stránky, nastavím výšku/border*/ 
+    border: 2px solid black;
+    height: 100vh; /*výška stránky*/
+}
+
+/*vše až po shadow, bez s*/
+
+.wrapper h2 span{
+    color: rgb(0, 150, 150)
+}
+
+
+.wrapper ul li span{
+    color: rgb(255, 0, 0);
+}
+
+
+.wrapper li:nth-child(2) span{
+    color: rgb(158, 158, 0);
+} /*není povinné*/
+
+/*PŘEDNOSTI:
+    id přebíjí classu (skoro všechno)
+    inline style přebijí všechno
+    !importnant přebíjí i inline*/
+
+.circle{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: red;
+    height: 50px;
+
+    position: absolute;
+    top: 250px;
+    right: 150px; /*vztahuje se k nejbližšínu relative prvku*/
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    font-weight: lighter;
+}
+
+.button:hover{
+    background-color: goldenrod;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.svg{
+    height: 10px;
+}

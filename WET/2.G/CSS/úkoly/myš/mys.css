@@ -1,0 +1,188 @@
+.ucho1 {
+width: 120px;
+aspect-ratio: 1/1;
+background-color: black;
+border-radius: 500px;
+position: absolute;
+    left: 10;
+    top: 180;
+
+}
+
+.ucho2 {
+    width: 120px;
+aspect-ratio: 1/1;
+background-color: black;
+border-radius: 500px;
+position: absolute;
+    left: 200;
+    top: 180;
+
+}
+
+.oblicej {
+width: 250px;
+aspect-ratio: 1/1;
+background-color: grey;
+border-radius: 500px;
+position: absolute;
+    left: 40px;
+     top: 250px;
+}
+
+.oko1 {
+width: 50px;
+aspect-ratio: 1/1;
+background-color:white ;
+border-radius: 500px;
+position: absolute;
+    left: 90px;
+    top:330px;
+
+}
+.oko2 {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color:white ;
+    border-radius: 500px;
+    position: absolute;
+        left: 180px;
+        top:330px ;
+    
+}
+
+.ocicko1 {
+width: 15px;
+aspect-ratio: 1/1;
+background-color: black;
+border-radius: 500px;
+position: absolute;
+    left: 107px;
+    top: 360px;
+}
+
+.ocicko2 {
+    width: 15px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 500px;
+    position: absolute;
+        left: 197px;
+        top: 360px;
+
+}
+
+.nos {
+width: 30px;
+aspect-ratio: 1/1;
+background-color: black;
+border-radius: 500px;
+position: absolute;
+    left: 147px;
+    top: 390px;
+
+}
+
+.fou1 {
+    width: 100px;
+height: 2px;
+background-color: black;
+position: absolute;
+    left: 110px;
+top: 395px;
+
+}
+
+.fou2 {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+        left: 110px;
+    top: 400px;
+
+}
+
+.fou3 {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+        left: 110px;
+    top: 405px;
+}
+
+.pusa {
+width: 50px;
+aspect-ratio: 2/1;
+border-radius: 500%;
+background-color: black;
+position: absolute;
+    left: 137px;
+    top: 440px;
+}
+
+.telo {
+width: 400px;
+aspect-ratio: 1/1;
+border-radius: 500px;
+background-color: grey;
+position: absolute;
+    left: 5px;
+    top: 450px;
+
+}
+
+.bricho {
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 500px;
+    background-color: pink;
+    position: absolute;
+        left: 80px;
+        top: 600px;
+
+}
+
+.packa1 {
+width: 60px;
+aspect-ratio: 2/1;
+border-radius: 500%;
+background-color: rgb(224, 122, 156);
+position: absolute;
+    left: 20px;
+    top: 500px;
+
+}
+
+.packa2 {
+    width: 60px;
+    aspect-ratio: 2/1;
+    border-radius: 500%;
+    background-color: rgb(224, 122, 156);
+    position: absolute;
+        left: 320px;
+        top: 500px;
+
+}
+
+.packa3 {
+    width: 60px;
+    aspect-ratio: 2/1;
+    border-radius: 500%;
+    background-color: rgb(224, 122, 156);
+    position: absolute;
+        left: 20px;
+        top: 790px;
+}
+
+.packa4 {
+    width: 60px;
+    aspect-ratio: 2/1;
+    border-radius: 500%;
+    background-color: rgb(224, 122, 156);
+    position: absolute;
+        left: 320px;
+        top: 790px;
+
+}

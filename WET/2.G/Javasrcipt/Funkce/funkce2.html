@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="button">Hojte pane bůh</button>
+
+    <script>
+        let talcitko = document.querySelector("#button")
+        let sirka = 100
+        let vyska = 75
+
+        function upravTlacitko() {
+        sirka = sirka + 50
+        vyska = vyska + 50
+        //button.style.cssText = "width: 30px; height: 20px"
+        button.style.width = sirka + "px"
+        button.style.height = vyska + "px"
+        }
+
+        function upravTlacitko1 () {
+        sirka = sirka - 150
+        vyska = vyska - 150
+        button.style.width = sirka + "px"
+        button.style.height = vyska + "px"
+        }
+
+
+        button.addEventListener("click", upravTlacitko)
+        button.addEventListener("dblclick", upravTlacitko1)
+
+    </script>
+</body>
+</html>

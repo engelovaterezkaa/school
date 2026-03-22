@@ -1,0 +1,24 @@
+
+.ctverec{
+    height: 350px;
+    width: 500px;
+    background-color: #023020;
+    border: solid #966F33 15px;
+}
+
+.ctverec1{
+    height: 250px;
+    width: 400px;
+    font-family: Fuzzy bubbles;
+    position: absolute;
+    top: 11%;
+    left: 10%;
+    color: white;
+}
+
+.bart{
+position: absolute;
+left: 54%;
+top: 15%;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input class="input" type="text" />
+        <button class="tlacitko">Zadej input</button>
+        <p class="output"></p>
+
+        <input class="input2" type="text" />
+        <button class="tlacitko2">Zadej input</button>
+        <p class="output2"></p>
+
+        <script>
+            let tlacitko = document.querySelector(".tlacitko");
+            let input = document.querySelector(".input");
+
+            tlacitko.addEventListener("click", function () {
+                opakovat();
+            });
+
+            //tlacitko.addEventListener("click", opakovat)
+
+            tlacitko.addEventListener("click", function () {
+                zopakovat();
+            });
+
+            let i = 6;
+
+            while (i < 667) {
+                console.log(i);
+                i++;
+            }
+
+            let i2 = 10;
+
+            while (i2 > 0) {
+                console.log(i2);
+                i2--;
+                //i2 = i2-1
+                //i2 -= 1
+            }
+
+            function opakovat() {
+                let slovo = "Pepa"; //x
+                let i3 = 0; //x
+                let cislo = parseInt(input.value);
+
+                while (i3 < cislo) {
+                    console.log(slovo);
+                    i3++;
+                }
+                // while(0 < cislo)
+                //console.log("Slovo")
+                //cislo--
+            }
+
+            function zopakovat() {
+                let output = document.querySelector(".output2");
+            }
+        </script>
+    </body>
+</html>

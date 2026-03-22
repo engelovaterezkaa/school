@@ -1,0 +1,79 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+    <h1 class="nadpis">Škola</h1>
+
+    <p class="text">Miluji Třebešín!!!</p>
+
+    <img class="img" src="https://th.bing.com/th/id/R.dfd3b563da136e1458a17ef77b0442ae?rik=9qdshgoWE8SZPA&riu=http%3a%2f%2fwww.industrie-jeunes.fr%2fwp-content%2fuploads%2f2021%2f02%2fStress-a-l-ecole-0-768x576.jpg&ehk=JneLeKK6Iw7MFYIqIbLNMfBfmdff0eDhgv7f6gdMb3w%3d&risl=&pid=ImgRaw&r=0" alt="">
+    
+    <a href="prazdniny.html">
+    <img class="sun" src="https://spstrebesin.sharepoint.com/SiteAssets/logospsgym_male.png" alt="">
+    </a>
+
+    <style>
+          body{
+            background-color: rgb(108, 149, 195);
+        }      
+
+        .nadpis {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 145;
+            top: 10%;
+            color: aliceblue;
+            font-family: Protest Guerrilla;
+        }
+
+        .text{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 20;
+            top: 10%;
+            font-family: Protest Guerrilla;
+            color: aliceblue;
+        }
+
+        .img{
+            position: relative;
+            width: 40%;
+            top: 15%;
+            left: 30%;
+        }
+
+        .sun{
+            position: absolute;
+            right:0%;
+            top: 0%;
+            width: 305;
+        }
+
+    </style>
+
+    <script>
+        let cloud = document.querySelector(".sun")
+
+        cloud.addEventListener("click", function () {
+                varovani()
+            })
+
+        function varovani() {
+            cloud.style.left = 0;
+        }
+
+    </script>
+</body>
+</html>

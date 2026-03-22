@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baloon</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .baloon_jump{
+        height: 250px;
+        animation: jump 1s infinite;
+    }
+    .baloon_pop{
+        height: 250px;
+        animation: pop 1s infinite;
+    }
+
+    @keyframes jump{
+        0%{
+            translate: 0px 90px;
+        }
+        25%{
+            translate: 0px 0px;
+        }
+        50%{
+            translate: 0px 90px;
+        }
+        75%{
+            translate: 0px 10px;
+        }
+        100%{
+            translate: 0px 100px;
+        }
+    }
+
+    @keyframes pop{
+        0%{
+            height: 250px;
+        }
+        50%{
+            height: 350px
+        }
+        80%{
+            height: 500px;
+            opacity: 100;
+        }
+        90%{
+            opacity: 0;
+        }
+    }
+</style>
+<body>
+    <img src="baloon.webp" class="baloon_jump" alt="">
+    <img src="baloon.webp" class="baloon_pop" alt="">
+</body>
+</html>

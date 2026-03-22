@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Známkuji podle nálady</title>
+
+    <style>
+        body{
+            background-color: rgb(191, 203, 255);
+            align-items: center;
+        }
+
+        .wrapper{
+            flex-wrap: wrap;
+            display: block;
+            position: relative;
+            /* border: 2px solid black; */
+        }
+
+        .nadpis{
+            position: relative;
+
+        }
+
+        .grade-btn{
+            padding: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: white;
+            color: rgb(54, 54, 182);
+            border: 2px solid rgb(54, 54, 182);
+        }
+
+        .grade-btn:hover{
+            border: 2px solid rgb(54, 54, 182);
+            background-color: rgb(99, 99, 209);
+            color: white;
+        }
+
+        .name{
+            border-radius: 5px;
+            border: 2px solid rgb(54, 54, 182);
+        }
+
+        .grade{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="nadpis">Go on..press to discover your grade</h1>
+        
+        <label for=""> What. Is. Your. Name.
+            <input class="name" type="text">
+        </label>
+
+        <button class="grade-btn">Grading</button>
+
+        <label for=""> Your. Grade.
+            <div class="output"></div>
+        </label>
+    </div>
+
+    <script>
+        let name = document.querySelector(".name")
+        let btn = document.querySelector(".grade-btn")
+        let output = document.querySelector(".output")
+
+        btn.addEventListener("click", function(){
+            let grade = Math.floor(Math.random()*4) + 1
+            output.innerText = grade
+
+            if (grade === 1) {
+                document.body.style.backgroundColor = "green"
+            } else if (grade === 2) {
+                document.body.style.backgroundColor = "blue"
+            } else if (grade === 3) {
+                document.body.style.backgroundColor = "red"
+            } else if (grade === 4) {
+                document.body.style.backgroundColor = "orange"
+            } else {
+                document.body.style.backgroundColor = "brown"
+            }
+        })
+            // ++emoji
+
+    </script>
+</body>
+</html>

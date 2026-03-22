@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response web</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+        .nadpis{
+            /* font-size: clamp(1.5rem, 7vw, 10rem); */
+            font-size: 7vw;
+        }
+
+        @media (width < 768px ) {
+            body{
+                background-color: rgb(35, 122, 93);
+            }
+
+            h1 {
+                font-size: 4rem;
+                color: #1ddfae;
+            }
+        }
+
+        @media (width < 380px ) {
+            body{
+                background-color: rgb(10, 51, 37);
+            }
+
+            h1 {
+                font-size: 3rem;
+                color: #9ad89a;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="nadpis">Toto tvořím v pondělí ráno..</h1>
+    </div>
+</body>
+</html>

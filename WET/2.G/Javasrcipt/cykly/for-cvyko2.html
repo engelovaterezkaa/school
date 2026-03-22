@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <ul id="seznam"></ul>
+
+        <input class="input" type="text" />
+        <button class="tlacitko">Zadej input</button>
+        <p class="output"></p>
+
+        <script>
+               const seznam = document.querySelector("#seznam")
+               let output = document.querySelector(".output")
+            let input = document.querySelector(".input")
+            let tlacitko = document.querySelector(".tlacitko")
+
+
+            for (let i = 0; i < 3; i++) {
+                const noveLi = document.createElement("li")
+                seznam.append(noveLi)
+                noveLi.innerText = "Ola como estas amigos, OI MINO"
+            }
+
+            tlacitko.addEventListener("click", function () {
+                Ble()
+            })
+
+            //misto append muze byt appendChild
+
+
+
+
+            function Ble() {
+                let l = parseInt(input.value)
+
+                for (let m = 0; m < l; m++) {
+                    const noveLi2 = document.createElement("li")
+                    noveLi2.innerText = "Pepa"
+                    seznam.append(noveLi2)
+                }
+            }
+        </script>
+    </body>
+</html>

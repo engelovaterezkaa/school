@@ -1,0 +1,90 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prázdniny</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="pozadi">
+    <h1 class="nadpis">Prázdniny</h1>
+
+    <p class="text">Naprosto zbožňuji Třebešín a prázdniny jsou utrpení :(</p>
+
+    <img class="img" src="https://th.bing.com/th/id/OIP.T2Zr6iMlh6N9XhNsk58n_gHaD4?rs=1&pid=ImgDetMain" alt="">
+    
+    <a href="skola.html">
+    <img class="sun" src="https://th.bing.com/th/id/R.665aa6b475ad1981ef91baf1333773f5?rik=nSUT7naGCS7Erw&pid=ImgRaw&r=0" alt="">
+    </a>
+    </div>
+
+
+    <style>
+        body{
+            background-color: rgb(135, 116, 90);
+        }
+
+        .nadpis {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 145;
+            top: 10%;
+            color: aliceblue;
+            font-family: Protest Guerrilla;
+        }
+
+        .text{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 20;
+            top: 10%;
+            font-family: Protest Guerrilla;
+            color: aliceblue;
+        }
+
+        .img{
+            position: relative;
+            width: 40%;
+            top: 20%;
+            left: 30%;
+        }
+
+        .sun{
+            position: absolute;
+            right:0%;
+            top: 0%;
+            width: 55;
+        }
+    </style>
+
+    <script>
+        let img = document.querySelector(".img")
+
+        img.addEventListener("click", function () {
+                zmena()
+            })
+
+        function zmena() {
+            img.style.width = 900;
+        }
+
+        let cloud = document.querySelector(".sun")
+
+        cloud.addEventListener("click", function () {
+                varovani()
+            })
+
+        function varovani() {
+            alert("NECHOĎ!!")
+        }
+
+    </script>
+</body>
+</html>

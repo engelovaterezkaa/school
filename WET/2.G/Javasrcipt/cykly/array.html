@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let seznam = ["Jarmil", "Andělína", "Hvězdoň", "Pepíček"]
+            //do [] vkladame hodnoty a oddelujeme pomoci carek [5, 8, 3], když text tak jednotlive do uvozovek
+
+            console.log(seznam[2]) //jednotlive polozky, pocitame od nuly
+
+            //vypise seznam jako jeden objekt
+            console.log(seznam)
+
+            //nahrazeni jmen-prepsani Jarmila na Vojtu
+            seznam[0] = "Vojta"
+
+            //pridani jmen: push
+            seznam.push("Hugo")
+
+            //odebira posledni hodnotu (ze seznamu)
+            //seznam.pop()
+            let vyhozenaOsoba = seznam.pop()
+            console.log("vyhozená osoba je:", vyhozenaOsoba) //pro prehlednost, uklada pod promennou
+
+            //odebrani hodnoty uprostred (vyrezani od indexu, kolik hodnot chci vyriznout)
+            seznam.splice(1,1)
+
+            for (let i = 0; i < seznam.length; i++) { //seznam.length dokaze vypocitat delku konkretniho seznamu
+                console.log(seznam[i]) //vypsani do konzole omezene i
+            }
+
+            //vice arrayu na githubu
+
+            let nahodneCislo = Math.floor(Math.random() * 10)
+            console.log(nahodneCislo)
+
+            //Math.random= 1 a 0, * 10 vygeneruje nah cislo do 10
+        </script>
+    </body>
+</html>

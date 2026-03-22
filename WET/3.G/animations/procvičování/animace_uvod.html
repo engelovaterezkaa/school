@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kolecko{
+            height: 100px;
+            aspect-ratio: 1/1; /*šířka v poměru*/
+            border: 2px solid black;
+            border-radius: 50%; /*kulatý*/
+            background-color: aquamarine;
+            animation: ukazka 5s infinite forwards alternate; /*jaka animace a jak dlouho trva, infinite=pořád probíhá/ číslo=>kolikrát animace proběhne, forwards = zůstane na 100% animace*/
+        } /*alternate=vrací se průběžně zpět*/
+
+        /*framy ze kterých se vytváří animace*/
+
+        @keyframes ukazka{ /*%= průběžná změna animace*/
+            0%{ 
+                background-color: rgb(218, 179, 255);
+            }
+
+            50%{
+                background-color: rgb(100, 255, 255);
+                border-radius: 0%;
+            }
+
+            100%{
+                opacity: 100;
+                background-color: rgb(100, 100, 255);
+                translate: 300px 0; /*pohyb animace: osa x(o 300px do strany) a osa y(o 0 nahoru/dolu)*/
+            }
+
+            /* 100%{
+                /*display: none; = zmizí*/
+                /*opacity: 0;*/
+            /* } */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="kolecko"></div>
+</body>
+</html>

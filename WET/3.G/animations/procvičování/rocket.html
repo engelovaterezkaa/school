@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rocket{
+        height: 250px;
+        animation: start 5s infinite;
+    }
+
+    @keyframes start {
+        0%{
+            translate: ;
+            rotate: 10deg;
+        }
+        5%{
+            translate: ;
+            rotate: -10deg;
+        }
+        10%{
+            rotate: 15deg;
+        }
+        50%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 60deg;
+        }
+    }
+</style>
+<body>
+    <img class="rocket" src="rocket.png" alt="">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontejner">
+        <h1 class="nadpis">Fortune Cookie Generator</h1>
+        <div>
+            <p class="predpoved">Click on the button down below for your fortune!!!</p>
+            <button class="tlacitko">The cookies from the FortuneCookie factory ran out, so sorry folks</button>
+        </div>
+    </div>
+
+    <script>
+        let predpovedi = [
+            "Your granny will give you more allowance", 
+            "You will find 5 pennies on the sidewalk", 
+            "Your child will be named Hvězdoň", 
+            "Your mother-in-law won't be haunting you this week", 
+            "Both sides of your pillow will be cold tonight"
+        ]
+
+        let predpoved = document.querySelector(".predpoved")
+        let tlacitko = document.querySelector(".tlacitko")
+            
+        
+        tlacitko.addEventListener("click", predpovedText)
+        
+        function predpovedText() {
+            let nahodnaPredpoved = Math.floor(Math.random() * predpovedi.length)
+            predpoved.textContent = predpovedi[nahodnaPredpoved]
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.images {
+ height: 200px;
+ border: 2px solid blue;
+ border-radius: 10px;
+}
+
+
+.headings {
+color: #61c2ba;
+font-family: Roboto;
+}

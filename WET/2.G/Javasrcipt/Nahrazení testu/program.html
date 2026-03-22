@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input class="input" type="text" />
+        <button class="tlacitko">Zadej input</button>
+        <p class="output"></p>
+
+        <div class="div"></div>
+
+        <script>
+            let output = document.querySelector(".output")
+            let input = document.querySelector(".input")
+            let tlacitko = document.querySelector(".tlacitko")
+            let div = document.querySelector(".div")
+
+            tlacitko.addEventListener("click", function() {
+                UserInput()
+            })
+
+
+            for (let i = 1; i < 16;) {
+                if (i === 13){
+                    i++
+                } else{
+                    console.log(i)
+                    i++
+                }
+               }
+
+            /*function UserInput() {
+                let userInput = parseInt(input.value)
+                let l = 0
+
+                while (l <= userInput){
+                    console.log(l)
+                    l++
+                }
+            }*/
+
+            function UserInput() {
+                let userInput = parseInt(input.value)
+                let l = 0
+
+                while (l <= userInput){
+                    div.innerText += l + ","
+                    l++
+                }
+            }
+        </script>
+    </body>
+</html>

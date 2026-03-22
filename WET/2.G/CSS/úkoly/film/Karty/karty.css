@@ -1,0 +1,140 @@
+.obrazek1{
+    height: 280px;
+    width: 180px;
+    border: 2px solid black;
+    position: absolute;
+    }
+    
+div{
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+}
+
+.text1{
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+    font-family: Manrope;
+    font-size: small;
+    text-align: center;
+
+}
+
+.text2{
+    position: absolute;
+    top: -280px;
+    left: 35px;
+    font-family: Manrope;
+    font-size: large;
+    text-align: center;
+}
+
+.button1{
+position: absolute;
+top: 250px;
+left: 34px;
+
+background: rgb(105, 161, 130);
+border: none;
+border-radius: 500px;
+padding: 10px 20px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+.button1:hover{
+background: rgb(75, 116, 93);
+}
+
+.img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 55px;
+    top: 20px;
+}
+
+.obrazek2{
+    height: 280px;
+    width: 180px;
+    border: 2px solid black;
+    position: absolute;
+    left: 390px;
+}
+
+.text3{
+    position: absolute;
+    top: -280px;
+    left: 50px;
+    font-family: Manrope;
+    font-size: large;
+    text-align: center;
+}
+
+
+.text4{
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+    font-family: Manrope;
+    font-size: small;
+    text-align: center;
+    
+
+}
+
+.button2{
+    position: absolute;
+top: 250px;
+left: 40px;
+}
+
+.r{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 55px;
+    top: 20px;
+}
+
+.obrazek3{
+    height: 280px;
+    width: 180px;
+    border: 2px solid black;
+    position: absolute;
+    left: -25px;
+}
+
+.text5{
+    position: absolute;
+    top: -280px;
+    left: 50px;
+    font-family: Manrope;
+    font-size: large;
+    text-align: center;
+}
+
+.text6{
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+    font-family: Manrope;
+    font-size: small;
+    text-align: center;
+}
+
+.button3{
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+

@@ -1,0 +1,144 @@
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    background-color: #FFEBCD;
+    Justify-content: space-evenly;
+}
+
+.text0{
+    align-items: center;
+    background-color: #FFEBCD;
+    text-align: center;
+}
+
+.nadpis{
+    font-family: Roboto;
+    font-size: 4em;
+    padding-top: 100px;
+}
+
+.karta1{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #B9E6FF;
+    margin-top: 0;
+}
+
+.bum{
+    font-family: Roboto;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text1{
+    font-size: 1em;
+    width: 240px;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-family: Roboto;
+}
+
+.karta2{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #B9E6FF;
+    margin-top: 0;
+}
+
+.duvody{
+    font-family: Roboto;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Roboto;
+}
+
+.seznam{
+    font-family: Roboto;
+    margin-top: 40px;
+}
+
+.karta3{
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #B9E6FF;
+    margin-top: 0;
+    align-items: center;
+    flex-direction: ;
+}
+
+.kruh1{
+    border-radius: 50%;
+    background-color: #82F9BF;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    aspect-ratio: 1/1;
+}
+
+.kruh2{
+    border-radius: 50%;
+    background-color: #F0972D;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    aspect-ratio: 1/1;
+}
+
+.kruh3{
+    border-radius: 50%;
+    background-color: #ECC4B3;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    aspect-ratio: 1/1;
+}
+
+.kruh4{
+    border-radius: 50%;
+    background-color: #976792;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    display: inline-block;
+    aspect-ratio: 1/1;
+}
+
+.buttonwrap{
+    align-items: center;
+    background-color: #FFEBCD;
+    display: flex;
+    flex-direction: row;
+    Justify-content: space-evenly;
+    
+}
+
+.button{
+    background: #FCDCA9;
+    border: solid 2px black;
+    border-radius: 500px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Roboto;
+    width: 100px;
+    text-align: center;
+}
+
+.koleckowrap{
+    height: 150px;
+    width: 150px;
+    align-items: center;
+}
