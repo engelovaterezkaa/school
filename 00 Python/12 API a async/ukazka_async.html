@@ -6,7 +6,6 @@
     <title>Async ukázka</title>
 </head>
 <body>
-    
     <script>
         const api = "https://catfact.ninja/fact"
 
@@ -25,11 +24,14 @@
         }
 
         async function showData() {
-            
+            const catFact = await fetchData(api)
+
+            if (catFact) {
+                console.log(catFact.fact)
+            }
         }
 
-
-
+        showData()
     </script>
 </body>
 </html>

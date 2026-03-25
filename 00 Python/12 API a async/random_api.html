@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: pink;
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10%;
+        }
+
+        .image{
+            height: 400px;
+        }
+
+        .title{
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+        }
+
+        .button{
+            margin-top: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgb(221, 215, 215);
+            color: black;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            border: solid 2px black;
+        }
+
+        .button:hover{
+            background-color: grey;
+            color: rgb(255, 255, 255);
+            border: 2px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Random dogs</h1>
+        <img class="image" src="" alt="">
+        <button class="button">Refresh page</button>
+    </div>
+    
+    <script>
+        const api = "https://random.dog/woof.json"
+        let image = document.querySelector(".image")
+        let btn = document.querySelector(".button")
+
+        async function fetchData(api) {
+            try{
+                const response = await fetch(api)
+            
+            if (!response.ok) {
+                throw Error("Something's wrong dumbass")
+            }
+
+            return await response.json()
+            } catch (error) {
+                console.log("Error", error)
+            }
+        }
+
+        async function showData() {
+            const dog = await fetchData(api)
+
+            if (dog) {
+                image.src = dog.url
+                // console.log("x")
+            }
+        }
+
+        btn.addEventListener("click", function () {
+            window.location.reload()
+        })
+
+        showData()
+        
+    </script>
+</body>
+</html>
